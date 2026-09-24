@@ -1,0 +1,2 @@
+# Existing route directories are served first. Unknown URLs receive a real 404.
+/* /404.html 404
