@@ -3,7 +3,7 @@ import { stories, images } from '../src/content.js';
 
 const template = await readFile('dist/index.html', 'utf8');
 const escape = value => value.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
-const description = 'Independent culture, fashion, music and art. Issue 01: After Dark.';
+const description = 'A fictional editorial concept for culture, fashion, music and art. Issue 01: After Dark.';
 const origin = process.env.SITE_URL?.replace(/\/$/, '');
 if (origin && !/^https?:\/\//.test(origin)) throw new Error('SITE_URL must be an absolute HTTP(S) URL.');
 const pages = [
@@ -11,6 +11,7 @@ const pages = [
   { path: '/latest', title: 'Latest stories' },
   { path: '/issues/01', title: 'Issue 01 — After Dark' },
   { path: '/about', title: 'About the publication' },
+  { path: '/case-study', title: 'Case study', description: 'The design system, responsive grid, typography and art direction behind the fictional OFF//RECORD editorial concept.' },
   ...['Culture', 'Fashion', 'Music', 'Art'].map(title => ({path: `/category/${title.toLowerCase()}`, title})),
   ...stories.map(story => ({path: `/article/${story.slug}`, title: story.title, description: story.blurb, image: story.image, story})),
 ];

@@ -1,6 +1,6 @@
 export const images = {
-  hero: '/images/nighthero.jpg', city: '/images/her.jpg', fashion: '/images/inthemood.jpg',
-  music: '/images/friends.jpg', dance: '/images/image.jpg', metro: '/images/metro.jpg',
+  hero: '/images/concept-hero.jpg', city: '/images/concept-city.jpg', fashion: '/images/concept-fashion.jpg',
+  music: '/images/concept-music.jpg', dance: '/images/concept-dance.jpg', metro: '/images/concept-metro.jpg',
 };
 
 export const imageAlts = {

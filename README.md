@@ -1,6 +1,6 @@
 # OFF//RECORD — Issue 01: After Dark
 
-A fictional independent magazine about culture, fashion, music and art. React + Vite, with structured editorial content and no backend.
+A clearly labeled fictional independent magazine and portfolio case study about culture, fashion, music and art. React + Vite, with structured editorial content and no backend.
 
 ## Run
 
@@ -24,16 +24,19 @@ Serve the generated directories directly and serve `404.html` with status 404 fo
 ## Editorial system
 
 - `src/content.js`: eight original stories, authors, issue membership, cover images, gallery sequences and section text. Reading times are calculated from the copy.
-- `src/main.jsx`: home, latest/search, four categories, issue, article, about and 404 views. The city essay, fashion editorial and music essay have distinct layouts.
-- `src/styles.css`: warm paper, ink and vermilion; Instrument Serif headlines and reading text, Inter navigation/wordmark, DM Mono metadata. Includes mobile layouts, focus states and reduced-motion support.
-- `public/images/`: the existing reference imagery plus optimized 640px and 1600px WebP variants. Original files are retained. Below-the-fold images load lazily.
+- `src/main.jsx`: home, latest/search, four categories, issue, article, case study, about and 404 views. The city essay, fashion editorial and music essay have distinct layouts.
+- `src/styles.css`: a modular night-radio interface built from electric blue, signal green, coral and ink. System sans type drives the interface, with Georgia reserved for long-form reading. Includes fully recomposed mobile layouts, focus states and reduced-motion support.
+- `public/images/concept-*`: six original AI-generated concept images plus optimized 640px and 1600px WebP variants. Below-the-fold images load lazily.
+- `artwork-source/`: the lossless PNG generation masters, retained outside the public deployment bundle.
 
 The article index reveals the corresponding image beside the pointer and on keyboard focus. Touch layouts show inline thumbnails. Galleries use native modal dialogs, arrow keys, Escape and focus restoration. Latest supports combined category and text filtering.
 
-All contributors and editorial situations are fictional. Existing reference image provenance/licensing was not supplied; confirm image permissions or replace the references before public publication. Contact and submission endpoints have deliberately not been invented.
+All contributors and editorial situations are fictional. Every image referenced by the published site was generated specifically for this project. The source/output record and portfolio-use review are in `IMAGE_RIGHTS.md`; legacy images with unknown provenance are quarantined in `legacy-unverified-images/` and excluded from production. Contact and submission endpoints have deliberately not been invented.
 
 ## Design rationale
 
-The issue works as a sequence of magazine spreads: a cinematic cover, a large lead story, an asymmetric dark spread, a dense index and a full-bleed closing image. Orange provides the recurring visual punctuation. Article bodies use a narrower reading measure, side metadata, pull quotes, inline imagery and contact sheets.
+The issue behaves like a live city broadcast rather than a sequence of print spreads: paired signal cards, compact utility navigation, pill-shaped actions, image-led story modules and a transmission log. Article bodies keep a focused reading measure, side metadata, pull quotes, inline imagery and contact sheets.
 
 The next issue is announced without inventing an archive. The content is shared across the homepage, latest, category and issue pages so additions have one source of truth.
+
+The `/case-study` route explains the typography system, twelve-to-four-column responsive grid and art direction. It also includes navigation, a complete linked article example and desktop/tablet/mobile compositions.
